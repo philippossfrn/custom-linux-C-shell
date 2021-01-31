@@ -1,0 +1,11 @@
+Implementing a custom linux C shell.
+
+Features:
+
+- Execute linux commands using fork and execvp
+- Custom implementation for redirect outpout using dup
+
+Run instructions:
+
+- compile with "make all" command
+- execute with "./exec"
