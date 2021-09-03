@@ -7,5 +7,6 @@ Features:
 
 Run instructions:
 
-- compile with "make all" command
+- compile with "make all"
 - execute with "./exec"
+
