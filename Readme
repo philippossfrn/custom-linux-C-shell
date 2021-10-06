@@ -8,5 +8,4 @@ Features:
 Run instructions:
 
 - compile with "make all"
-- execute with "./exec"
-
+- execute with "./exec" command
