@@ -21,7 +21,8 @@
 #define FALSE 0
 
 #define SIZE 5000
-
+#define RESET   "\033[0m"
+#define GREEN   "\033[32m"      /* Green */
 /*------------------------------------------------------ Global Variables ----------------------------------------------------------*/
 char * user_name, * user_dir;
 char buff[SIZE];
@@ -46,7 +47,7 @@ void print_prompt(){
 	if (user_name == "" && user_dir == ""){ // Error check
 		printf("No User found, please try again!!!\n");
 	}
-	printf("%s@cs345sh%s$ ",user_name,user_dir); // Print user's infos in prompt
+	printf( GREEN "%s@cs345sh%s$ " RESET ,user_name,user_dir); // Print user's infos in prompt
 }
 
 /* Exit function */
