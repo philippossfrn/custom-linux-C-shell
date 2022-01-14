@@ -38,6 +38,19 @@ int m;
 void INThandler(int); // Ctr+C
 _Bool fill_array = TRUE;
 
+/*------------------------------------------------------- Color Functions ----------------------------------------------------------*/
+
+void blue() {
+	printf("\033[0;34m");
+}
+
+void white() {
+	printf("\033[0;37m");
+}
+
+void reset() {
+	printf("\033[0m");
+}
 
 /*---------------------------------------------------------- Functions -------------------------------------------------------------*/
 /*Print Prompt*/
@@ -47,7 +60,19 @@ void print_prompt(){
 	if (user_name == "" && user_dir == ""){ // Error check
 		printf("No User found, please try again!!!\n");
 	}
-	printf( GREEN "%s@cs345sh%s$ " RESET ,user_name,user_dir); // Print user's infos in prompt
+	printf( GREEN "%s@philippos-shell" RESET ,user_name); // Print user's infos in prompt
+
+	white();
+	printf(":~");
+	reset();
+
+	blue();
+	printf("%s",user_dir);
+	reset();
+
+	white();
+	printf("$");
+	reset();
 }
 
 /* Exit function */
