@@ -1,9 +1,7 @@
-Implementing a custom linux C shell.
-
+Implementing a simple custom linux C shell
 - Execute linux commands using execvp
 - Custom implementation for redirect outpout
 
 Run instructions:
-
 - compile with "make all"
 - execute with "./exec" command
